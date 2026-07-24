@@ -1,145 +1,173 @@
-# 🚀 LLM Foundations
+# 📚 Recommended Learning Sequence
 
-> A structured roadmap to master the fundamental concepts behind Large Language Models before diving into Transformers and modern LLM architectures.
-
----
-
-## 📖 Overview
-
-This repository covers the essential concepts required to understand how modern LLMs work. Each module includes:
-
-* 📚 Theory
-* 📝 Notes
-* 📄 Research Papers
-* 💻 Implementations
-* 🎯 Exercises
-* 📺 Learning Resources
+Follow this order to build a strong foundation before moving on to Transformers and LLM engineering.
 
 ---
 
-# 📚 Curriculum
+# ⭐ Primary Course — Stanford CS224N
 
-| Module                      | Description                                          | Resources                                                                                                                                                            |
-| --------------------------- | ---------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **01. NLP Evolution**       | Evolution from Rule-Based NLP to Foundation Models   | [📂 Notes](./01_NLP_Evolution/) • [📄 Papers](./papers/nlp_evolution.md) • [🎥 Stanford CS224N](https://web.stanford.edu/class/cs224n/)                              |
-| **02. Language Modeling**   | N-Grams, Neural Language Models, Causal & Masked LMs | [📂 Notes](./02_Language_Modeling/) • [💻 Code](./implementations/language_modeling/) • [🎥 Karpathy - Let's Build GPT](https://www.youtube.com/watch?v=kCc8FmEb1nY) |
-| **03. Information Theory**  | Entropy, Cross-Entropy, KL Divergence, Perplexity    | [📂 Notes](./03_Information_Theory/) • [🎥 StatQuest](https://www.youtube.com/@statquest) • [📘 CS224N](https://web.stanford.edu/class/cs224n/)                      |
-| **04. Tokenization Basics** | BPE, WordPiece, SentencePiece, TikToken              | [📂 Notes](./04_Tokenization/) • [🤗 Hugging Face Course](https://huggingface.co/learn/nlp-course)                                                                   |
-| **05. Embeddings**          | Word2Vec, GloVe, FastText, Contextual Embeddings     | [📂 Notes](./05_Embeddings/) • [📘 Jurafsky Book](https://web.stanford.edu/~jurafsky/slp3/)                                                                          |
-| **06. Sequence Modeling**   | RNN, LSTM, GRU, Long-Term Dependencies               | [📂 Notes](./06_Sequence_Modeling/) • [🎥 DeepLearning.AI](https://www.coursera.org/specializations/deep-learning)                                                   |
-| **07. Attention Intuition** | Query, Key, Value, Self-Attention                    | [📂 Notes](./07_Attention_Intuition/) • [📖 Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)                                            |
-| **08. Scaling Laws**        | Compute, Data, Model Scaling, Chinchilla             | [📂 Notes](./08_Scaling_Laws/) • [📄 Chinchilla Paper](https://arxiv.org/abs/2203.15556)                                                                             |
+> **Start here.** If you can only take one NLP course, make it Stanford CS224N.
 
----
+**Course:** Stanford CS224N – Natural Language Processing with Deep Learning
 
-# 🗂 Repository Structure
+🔗 https://web.stanford.edu/class/cs224n/
+
+### Recommended Lecture Order
 
 ```text
-LLM-Foundations/
-│
-├── README.md
-│
-├── 01_NLP_Evolution/
-├── 02_Language_Modeling/
-├── 03_Information_Theory/
-├── 04_Tokenization/
-├── 05_Embeddings/
-├── 06_Sequence_Modeling/
-├── 07_Attention_Intuition/
-├── 08_Scaling_Laws/
-│
-├── implementations/
-├── papers/
-├── resources/
-└── diagrams/
+Lecture 1
+├── History of NLP
+└── Language Models
+        │
+        ▼
+Lecture 2
+├── Word Vectors
+└── Embeddings
+        │
+        ▼
+Lecture 3
+└── Neural Networks for NLP
+        │
+        ▼
+Lecture 4
+└── Sequence Models
+        │
+        ▼
+Lecture 5
+└── Attention
 ```
 
----
-
-# 📺 Recommended Courses
-
-| Course                                          | Link                                                   |
-| ----------------------------------------------- | ------------------------------------------------------ |
-| Stanford CS224N                                 | https://web.stanford.edu/class/cs224n/                 |
-| Hugging Face NLP Course                         | https://huggingface.co/learn/nlp-course                |
-| DeepLearning.AI Sequence Models                 | https://www.coursera.org/specializations/deep-learning |
-| Andrej Karpathy – Neural Networks: Zero to Hero | https://www.youtube.com/@AndrejKarpathy                |
-| Sebastian Raschka                               | https://www.youtube.com/@SebastianRaschka              |
+These lectures provide the theoretical foundation required to understand modern Transformer architectures.
 
 ---
 
-# 📚 Recommended Books
+# 💻 Andrej Karpathy
 
-| Book                                               | Link                                                                    |
-| -------------------------------------------------- | ----------------------------------------------------------------------- |
-| Speech and Language Processing (Jurafsky & Martin) | https://web.stanford.edu/~jurafsky/slp3/                                |
-| Build a Large Language Model (From Scratch)        | https://www.manning.com/books/build-a-large-language-model-from-scratch |
+Once you've completed the CS224N lectures, continue with Andrej Karpathy's implementation-focused videos.
 
----
+🔗 https://www.youtube.com/@AndrejKarpathy
 
-# 📄 Essential Research Papers
-
-| Paper                                                   | Link                                                        |
-| ------------------------------------------------------- | ----------------------------------------------------------- |
-| Attention Is All You Need                               | https://arxiv.org/abs/1706.03762                            |
-| Neural Probabilistic Language Model                     | https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf |
-| Efficient Estimation of Word Representations (Word2Vec) | https://arxiv.org/abs/1301.3781                             |
-| GloVe                                                   | https://aclanthology.org/D14-1162/                          |
-| Chinchilla Scaling Laws                                 | https://arxiv.org/abs/2203.15556                            |
-| LLaMA                                                   | https://arxiv.org/abs/2302.13971                            |
-
----
-
-# 🎯 Learning Path
+### Recommended Order
 
 ```text
-NLP Evolution
-      │
-      ▼
-Language Modeling
-      │
-      ▼
-Information Theory
-      │
-      ▼
-Tokenization
-      │
-      ▼
+Neural Networks: Zero to Hero
+              │
+              ▼
+Let's Build GPT
+              │
+              ▼
+GPT Tokenizer
+              │
+              ▼
+Let's Reproduce GPT-2
+```
+
+This series bridges the gap between theory and practical implementation using PyTorch.
+
+---
+
+# 📘 Sebastian Raschka
+
+Sebastian Raschka is an excellent resource for modern LLM engineering topics.
+
+🔗 https://www.youtube.com/@SebastianRaschka
+
+### Focus Areas
+
+```text
 Embeddings
-      │
-      ▼
-Sequence Modeling
-      │
-      ▼
-Attention Intuition
       │
       ▼
 Scaling Laws
       │
       ▼
+Modern LLM Architectures
+      │
+      ▼
+Llama
+      │
+      ▼
+GPT
+      │
+      ▼
+Fine-Tuning
+```
+
+📖 Recommended Book
+
+**Build a Large Language Model (From Scratch)**
+
+🔗 https://www.manning.com/books/build-a-large-language-model-from-scratch
+
+---
+
+# 🤗 Hugging Face NLP Course
+
+The official Hugging Face course is ideal once you're ready to start coding.
+
+🔗 https://huggingface.co/learn/nlp-course
+
+### Study Order
+
+```text
+Tokenizers
+      │
+      ▼
+Datasets
+      │
+      ▼
+Language Models
+      │
+      ▼
 Transformers
 ```
 
----
-
-# 🚀 Next Repository
-
-After completing this repository:
-
-➡️ **LLM Transformers**
-
-* Multi-Head Attention
-* Positional Encoding
-* Encoder
-* Decoder
-* Transformer Architecture
-* GPT from Scratch
-* Vision Transformers
-* RoPE
-* FlashAttention
+Complete these chapters before beginning hands-on Transformer implementations.
 
 ---
 
-## ⭐ If you find this repository useful
+# 🎨 Jay Alammar (Visual Learning)
 
-Consider giving it a ⭐ to support the project and help others discover this learning roadmap.
+Jay Alammar's articles are among the best visual explanations of Transformer-based models.
+
+🔗 https://jalammar.github.io/
+
+### Read in This Order
+
+```text
+The Illustrated Transformer
+            │
+            ▼
+The Illustrated GPT-2
+            │
+            ▼
+The Illustrated BERT
+            │
+            ▼
+A Visual Guide to Attention
+```
+
+These resources make complex concepts intuitive through high-quality diagrams and animations.
+
+---
+
+# 🗺️ Complete Learning Flow
+
+```text
+Stanford CS224N
+        │
+        ▼
+Andrej Karpathy
+        │
+        ▼
+Sebastian Raschka
+        │
+        ▼
+Hugging Face NLP Course
+        │
+        ▼
+Jay Alammar
+        │
+        ▼
+Ready for Transformers 🚀
+```
