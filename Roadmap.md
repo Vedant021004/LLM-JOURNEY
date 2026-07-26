@@ -267,6 +267,7 @@ Advanced Alignment
 ├── PPO
 └── Continual Fine-Tuning
 ```
+```
 Natural Language Processing (NLP)
 │
 ├── Text Preprocessing
@@ -299,6 +300,7 @@ Natural Language Processing (NLP)
     ├── Encoder
     ├── Decoder
     └── Large Language Models
+```
 ---
 
 # Projects
