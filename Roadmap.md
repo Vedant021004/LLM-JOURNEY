@@ -267,7 +267,38 @@ Advanced Alignment
 ├── PPO
 └── Continual Fine-Tuning
 ```
-
+Natural Language Processing (NLP)
+│
+├── Text Preprocessing
+│   ├── Lowercasing
+│   ├── Removing punctuation
+│   ├── Stop words
+│   ├── Stemming
+│   └── Lemmatization
+│
+├── Tokenization ⭐
+│   ├── Word Tokenization
+│   ├── Character Tokenization
+│   ├── Sentence Tokenization
+│   ├── Subword Tokenization
+│   │   ├── BPE
+│   │   ├── WordPiece
+│   │   └── SentencePiece
+│   └── Special Tokens
+│
+├── Vocabulary
+├── Embeddings
+├── Sequence Models
+│   ├── RNN
+│   ├── LSTM
+│   └── GRU
+│
+└── Transformers
+    ├── Self-Attention
+    ├── Multi-Head Attention
+    ├── Encoder
+    ├── Decoder
+    └── Large Language Models
 ---
 
 # Projects
